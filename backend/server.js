@@ -71,9 +71,7 @@ You are a helpful and knowledgeable AI assistant.
 
 const client = new OpenAI({
   apiKey: process.env.GEMINI_API_KEY,
-
-  baseURL:
-    "https://generativelanguage.googleapis.com/v1beta/openai/",
+  baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
 });
 
 // ===============================
@@ -94,7 +92,7 @@ app.post("/api/chat", async (req, res) => {
 
   try {
     const completion = await client.chat.completions.create({
-      model: "gemini-2.0-flash",
+  model: "gemini-3.6-flash",
 
       messages: [
         {
